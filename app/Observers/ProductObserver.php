@@ -10,9 +10,4 @@ class ProductObserver
     {
 
     }
-
-    public function deleting(Product $product)
-    {
-
-    }
 }
