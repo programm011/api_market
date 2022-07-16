@@ -2,13 +2,10 @@
 
 namespace App\Http\Controllers\Api;
 
-use App\Http\Controllers\Controller;
 use App\Services\OdersService;
-use App\Traits\Response;
 
-class OrderController extends Controller
+class OrderController extends BaseController
 {
-    use Response;
     public function __construct(protected OdersService $service) { }
 
     public function myOrders()

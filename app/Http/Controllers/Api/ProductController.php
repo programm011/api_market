@@ -2,13 +2,10 @@
 
 namespace App\Http\Controllers\Api;
 
-use App\Http\Controllers\Controller;
 use App\Services\ProductService;
-use App\Traits\Response;
 
-class ProductController extends Controller
+class ProductController extends BaseController
 {
-    use Response;
     public function __construct(protected ProductService $service) { }
 
     public function index()
